@@ -37,6 +37,12 @@
       "relation": "manyToMany",
       "target": "api::product.product",
       "inversedBy": "collections"
+    },
+    "seoInformation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": false
     }
   }
 }
