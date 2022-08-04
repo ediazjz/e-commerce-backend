@@ -16,6 +16,11 @@
       "type": "string",
       "required": true
     },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
     "description": {
       "type": "richtext"
     },
@@ -32,11 +37,6 @@
       "relation": "manyToMany",
       "target": "api::product.product",
       "inversedBy": "collections"
-    },
-    "slug": {
-      "type": "uid",
-      "required": true,
-      "targetField": "title"
     }
   }
 }

@@ -10,62 +10,34 @@
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": true
-    }
-  },
   "attributes": {
     "title": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "type": "string",
       "required": true,
-      "unique": true
-    },
-    "description": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "text",
-      "required": true
-    },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "unique": false
     },
     "slug": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "type": "uid",
       "targetField": "title",
       "required": true
     },
+    "description": {
+      "type": "richtext"
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {}
+    },
     "price": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
       "type": "float",
-      "required": true
+      "required": true,
+      "unique": false,
+      "min": 0
     },
     "productType": {
       "type": "relation",
