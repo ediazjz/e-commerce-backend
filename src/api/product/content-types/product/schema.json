@@ -10,6 +10,7 @@
   "options": {
     "draftAndPublish": false
   },
+  "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "string",
@@ -38,6 +39,25 @@
       "required": true,
       "unique": false,
       "min": 0
+    },
+    "compareAtPrice": {
+      "type": "float",
+      "min": 0
+    },
+    "costPerItem": {
+      "type": "float",
+      "required": true,
+      "min": 0
+    },
+    "inventory": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "sellWithoutStock": {
+      "type": "boolean",
+      "default": false,
+      "required": false
     },
     "productType": {
       "type": "relation",
