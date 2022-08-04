@@ -4,7 +4,8 @@
   "info": {
     "singularName": "product-type",
     "pluralName": "product-types",
-    "displayName": "Product Type"
+    "displayName": "Product Type",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -14,11 +15,12 @@
     "name": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "slug": {
       "type": "uid",
-      "targetField": "name"
+      "targetField": "name",
+      "required": true
     }
   }
 }

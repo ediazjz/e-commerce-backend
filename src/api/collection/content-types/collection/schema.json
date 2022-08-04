@@ -4,7 +4,8 @@
   "info": {
     "singularName": "collection",
     "pluralName": "collections",
-    "displayName": "Collection"
+    "displayName": "Collection",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,18 +20,23 @@
       "type": "richtext"
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": false
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "products": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::product.product",
       "inversedBy": "collections"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "title"
     }
   }
 }
