@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_types",
+  "info": {
+    "singularName": "product-type",
+    "pluralName": "product-types",
+    "displayName": "Product Type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    }
+  }
+}
