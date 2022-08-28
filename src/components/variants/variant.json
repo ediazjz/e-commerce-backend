@@ -30,7 +30,7 @@
       "type": "string",
       "required": true
     },
-    "inventory": {
+    "quantity": {
       "type": "integer",
       "required": true,
       "min": 0
