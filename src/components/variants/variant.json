@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_variants_variants",
+  "info": {
+    "displayName": "Variant",
+    "icon": "cart-arrow-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "variant": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "float",
+      "required": true,
+      "min": 0
+    },
+    "costPerItem": {
+      "type": "float",
+      "required": true,
+      "min": 0
+    },
+    "compareAtPrice": {
+      "type": "float",
+      "required": false,
+      "min": 0
+    },
+    "sku": {
+      "type": "string",
+      "required": true
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

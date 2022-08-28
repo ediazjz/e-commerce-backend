@@ -25,15 +25,6 @@
     "description": {
       "type": "richtext"
     },
-    "media": {
-      "type": "media",
-      "multiple": true,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ],
-      "pluginOptions": {}
-    },
     "price": {
       "type": "float",
       "required": true,
@@ -49,14 +40,39 @@
       "required": true,
       "min": 0
     },
-    "inventory": {
+    "sku": {
+      "type": "uid",
+      "required": true
+    },
+    "quantity": {
       "type": "integer",
       "required": true,
-      "min": 1
+      "min": 0
     },
     "sellWithoutStock": {
       "type": "boolean",
       "default": false,
+      "required": false
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {}
+    },
+    "variants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "variants.variant-group"
+    },
+    "seoInformation": {
+      "displayName": "SEO",
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
       "required": false
     },
     "productType": {
@@ -74,13 +90,6 @@
       "relation": "manyToMany",
       "target": "api::collection.collection",
       "mappedBy": "products"
-    },
-    "seoInformation": {
-      "displayName": "SEO",
-      "type": "component",
-      "repeatable": false,
-      "component": "seo.seo",
-      "required": false
     }
   }
 }
