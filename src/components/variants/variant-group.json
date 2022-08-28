@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_variants_variant_groups",
+  "info": {
+    "displayName": "Variant Group",
+    "icon": "arrows-alt"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "Option": {
+      "displayName": "Variant",
+      "type": "component",
+      "repeatable": true,
+      "component": "variants.variant",
+      "required": true,
+      "min": 1
+    }
+  }
+}

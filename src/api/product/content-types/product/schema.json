@@ -85,6 +85,11 @@
       "repeatable": false,
       "component": "seo.seo",
       "required": false
+    },
+    "variants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "variants.variant-group"
     }
   }
 }
