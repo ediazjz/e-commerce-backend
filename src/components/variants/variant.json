@@ -23,7 +23,7 @@
     },
     "compareAtPrice": {
       "type": "float",
-      "required": true,
+      "required": false,
       "min": 0
     },
     "sku": {
