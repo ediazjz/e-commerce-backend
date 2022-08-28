@@ -22,6 +22,10 @@
       "targetField": "title",
       "required": true
     },
+    "sku": {
+      "type": "uid",
+      "required": true
+    },
     "description": {
       "type": "richtext"
     },
